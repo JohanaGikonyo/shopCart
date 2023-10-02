@@ -5,9 +5,9 @@ const Product = ({ product, addToCart }) => {
   const { id, name, price } = product;
 
   return (
-    <li>
+    <li  style={{listStyle:'none'}}>
       <div>
-        <h3>{name}</h3>
+        <h3><img src={name} style={{height:150, width:150}}/></h3>
         <p>${price}</p>
         <button onClick={() => addToCart(id)}>Add to Cart</button>
       </div>

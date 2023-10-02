@@ -6,10 +6,10 @@ const Cart = ({ cart, removeFromCart }) => {
 
   return (
     <div>
-      <h2>Shopping Cart</h2>
+      <h2>Items You have Chosen</h2>
       <ul>
         {cartItems.map(([itemId, quantity]) => (
-          <li key={itemId}>
+          <li key={itemId}  style={{listStyle:'none'}}>
             Item ID: {itemId} | Quantity: {quantity}
             <button onClick={() => removeFromCart(itemId)}>Remove</button>
           </li>
